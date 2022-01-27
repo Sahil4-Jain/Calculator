@@ -1,5 +1,6 @@
 package com.example.calculator
 
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -35,7 +36,9 @@ class MainActivity : AppCompatActivity() , View.OnClickListener{
         findViewById<Button>(R.id.btnDiv).setOnClickListener(this)
         findViewById<ImageButton>(R.id.btnBack).setOnClickListener(this)
         findViewById<ImageButton>(R.id.btnSQ).setOnClickListener(this)
-     }
+
+
+    }
 
     override fun onClick(v: View?) {
         if(edtxt?.text.contentEquals("Infinity"))
